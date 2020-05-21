@@ -1,0 +1,348 @@
+Used in https://next.json-generator.com to get json examsheets
+{data:[
+  {
+    'repeat(500)': {
+      id_exam: '123',
+      id_user: '{{index() + 1}}',
+      answersheets: [
+        {
+          'repeat(10)':{
+          	id_session: '{{index() + 11}}',
+            answers: {
+            	1 : '{{bool()}}',
+                2 : '{{bool()}}',
+                3 : '{{bool()}}',
+                4 : '{{bool()}}',
+                5 : '{{bool()}}',
+                6 : '{{bool()}}',
+                7 : '{{bool()}}',
+                8 : '{{bool()}}',
+                9 : '{{bool()}}',
+                10: '{{bool()}}'
+            }
+          }  
+        }
+      ]
+    }
+  }
+]
+}
+
+Example examsheet with 2 users used for screenshot
+var examSheet = `{
+	"data": [
+	  {
+		"id_exam": 123,
+		"id_user": 1,
+		"answersheets": [
+		  {
+			"id_session": 11,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 12,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": true,
+			  "7": true,
+			  "8": false,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 13,
+			"answers": {
+			  "1": false,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 14,
+			"answers": {
+			  "1": false,
+			  "2": false,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 15,
+			"answers": {
+			  "1": true,
+			  "2": false,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": false,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 16,
+			"answers": {
+			  "1": true,
+			  "2": false,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 17,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 18,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": true,
+			  "4": true,
+			  "5": true,
+			  "6": true,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 19,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 20,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": true,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  }
+		]
+	  },
+	  {
+		"id_exam": 123,
+		"id_user": 2,
+		"answersheets": [
+		  {
+			"id_session": 11,
+			"answers": {
+			  "1": true,
+			  "2": false,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": false,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 12,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": true,
+			  "6": true,
+			  "7": true,
+			  "8": false,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 13,
+			"answers": {
+			  "1": false,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": true,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 14,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": true,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 15,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": true,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 16,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": true,
+			  "4": true,
+			  "5": true,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 17,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": true,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 18,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": true,
+			  "4": true,
+			  "5": true,
+			  "6": true,
+			  "7": true,
+			  "8": true,
+			  "9": false,
+			  "10": true
+			}
+		  },
+		  {
+			"id_session": 19,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": false,
+			  "4": true,
+			  "5": false,
+			  "6": true,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": false
+			}
+		  },
+		  {
+			"id_session": 20,
+			"answers": {
+			  "1": true,
+			  "2": true,
+			  "3": true,
+			  "4": true,
+			  "5": false,
+			  "6": false,
+			  "7": true,
+			  "8": true,
+			  "9": true,
+			  "10": true
+			}
+		  }
+		]
+	  }
+	]
+  }
+  `
