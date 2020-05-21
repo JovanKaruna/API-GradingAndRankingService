@@ -43,8 +43,26 @@ and make a json file named rank.json(you can change the name in line 101), while
 that represents rank then find users who had that rank from mysql and make an output of completed user details and rank as Json format 
 in the terminal 
 
-
+## Code Structure
+```
+API-GradingAndRankingService
+├───code
+│   ├───GradingService
+│   │        grading.go
+│   │        examsheets.json
+│   │        help.txt
+│   │        grading.exe
+│   │        score.json
+│   │        
+│   └───RankingService
+│            ranking.go
+│            ranking.exe
+│            rank.json
+├───screenshots
+└───README.md
+```
 
 ## Acknowledgement
+I Used https://next.json-generator.com for making examsheets.json, you can see the code in code/gradingService/help.txt
 github : (https://github.com/JovanKaruna/API-GradingAndRankingService) Created By : Jovan Karuna Cahyadi 
 
